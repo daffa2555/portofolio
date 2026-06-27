@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title> M N DAFFA — NaDev · AI Engineer & Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<canvas id="space"></canvas>
+<div class="progress" id="prog"></div>
+
+<header>
+  <a class="brand" href="#top"><span class="mark"></span>NaDev</a>
+  <nav class="links">
+    <a href="#about">About</a><a href="#stack">Stack</a><a href="#featured">Work</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="nav-cta" href="#contact">Get in touch</a>
+</header>
+
+<!-- persistent AI core -->
+<div class="orb" id="orb" aria-hidden="true">
+  <div class="spin">
+    <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+    <div class="core"></div>
+  </div>
+</div>
+
+<main>
+  <section class="hero" id="top">
+    <div class="wrap">
+      <span class="eyebrow rv">NaDev · Mataram, ID</span>
+      <h1 class="display"><span class="glow rv">AI engineer<br>&amp; relentless<br>builder.</span></h1>
+      <p class="sub rv">I'm <strong>Daf</strong> — I design and ship AI-powered tools that real people actually use, from study assistants to coding agents.</p>
+      <p class="typed mono"><span id="typed"></span></p>
+    </div>
+    <div class="scroll-hint"><span class="bar"></span>Scroll</div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <p class="big" id="manifesto">I don't stop at ideas — I turn them into things that run.</p>
+      <p class="lede rv">Information Systems &amp; Technology student building under the NaDev name. My focus is AI engineering — LLM apps, agents, and the glue that makes them reliable — but I'm just as happy in a game engine, a backend, or a pixel canvas.</p>
+    </div>
+  </section>
+
+  <section class="stack" id="stack">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow rv">Toolbox</span>
+        <h2 class="display rv">What I build with.</h2>
+      </div>
+      <div class="skill-grid">
+        <div class="skill rv"><div class="k">AI / LLM</div><h4>Groq · Gemini</h4><p>Prompt engineering, tool-calling agents, and eval harnesses to keep outputs honest.</p></div>
+        <div class="skill rv"><div class="k">Backend</div><h4>Python · Flask</h4><p>FastAPI, Supabase, auth hardening, and APIs that hold up in production.</p></div>
+        <div class="skill rv"><div class="k">Mobile</div><h4>Flutter · Dart</h4><p>Cross-platform apps from UI down to the data layer.</p></div>
+        <div class="skill rv"><div class="k">Games</div><h4>Godot 4</h4><p>GDScript, systems design, procedural audio, and scene architecture.</p></div>
+        <div class="skill rv"><div class="k">Systems</div><h4>Linux · Arch</h4><p>Custom setups, Hyprland tooling, and AI woven into the desktop itself.</p></div>
+        <div class="skill rv"><div class="k">Security</div><h4>Scapy · Logs</h4><p>Packet and log analysis — currently building toward AI-assisted detection.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured" id="featured">
+    <div class="wrap">
+      <div class="feat-card rv">
+        <div class="badge"><span class="pulse"></span>Live · Hugging Face Spaces</div>
+        <h3>Bord-AI</h3>
+        <p class="desc">An AI study assistant chatbot for students. Flask backend wired to Groq and Gemini, with hardened admin auth and a growing dataset of cleaned conversation logs. Adopted organically across multiple campuses — my flagship project.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Groq</span><span class="tag">Gemini</span><span class="tag">Supabase</span></div>
+        <a class="link" href="#" data-edit="bordai-link">Visit Bord-AI <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="work">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow rv">Selected work</span>
+        <h2 class="display rv">More things I shipped.</h2>
+      </div>
+      <div class="proj-grid">
+        <div class="proj rv"><div class="idx mono">01</div><h4>nadev_agent</h4><p>A CLI coding agent built on Groq tool-calling — six tools wired straight into my dev workflow.</p><div class="stack-line">python · groq · tool-calling</div></div>
+        <div class="proj rv"><div class="idx mono">02</div><h4>Space Emergency Call</h4><p>Sci-fi management sim in Godot 4: rank progression, reactor systems, a galaxy map, and procedural audio.</p><div class="stack-line">godot 4 · gdscript</div></div>
+        <div class="proj rv"><div class="idx mono">03</div><h4>NaDev AI-OS</h4><p>A text-driven AI command layer on Arch Linux — Hyprland keybinds plus rofi plus Groq.</p><div class="stack-line">linux · python · groq</div></div>
+        <div class="proj rv"><div class="idx mono">04</div><h4>Cuy-AI</h4><p>A floating desktop AI companion built with CustomTkinter, always one keystroke away.</p><div class="stack-line">python · customtkinter · groq</div></div>
+        <div class="proj rv"><div class="idx mono">05</div><h4>Gudang Online</h4><p>A warehouse management mobile app with full CRUD, built end-to-end in Flutter.</p><div class="stack-line">flutter · dart</div></div>
+        <div class="proj rv"><div class="idx mono">06</div><h4>nadev-soc</h4><p>A security-operations toolkit in progress — packet analysis, log analysis, and AI-assisted detection.</p><div class="stack-line">python · scapy · wip</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <span class="eyebrow rv" style="justify-content:center">Let's talk</span>
+      <h2 class="display"><span class="glow rv">Let's build<br>something.</span></h2>
+      <p class="lede rv">Open to collaboration, freelance AI work, and anything that ships. Pick a channel.</p>
+      <div class="socials rv">
+        <a class="social primary" href="https://github.com/daffa2555" data-edit="github">GitHub <span aria-hidden="true">→</span></a>
+        <a class="social" href="https://huggingface.co/spaces/NadevA23/bord-ai" data-edit="huggingface">Hugging Face</a>
+        <a class="social" href="https://linkedin.com/in/daffaanan" data-edit="linkedin">LinkedIn</a>
+        <a class="social" href="mailto:daffaanan11@gmail.com" data-edit="email">Email</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>NaDev © 2026 — built by Daf in Mataram. // crafted with too much coffee</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
